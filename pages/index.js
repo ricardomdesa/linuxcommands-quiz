@@ -7,6 +7,8 @@ import Widget from '../src/components/Widget'
 import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
+import Button from '../src/components/Button'
+import Input from '../src/components/Input'
 import GitHubCorner from '../src/components/GitHubCorner'
 
 // const BackgroundImage = styled.div`
@@ -40,17 +42,20 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
+            <p>{db.description}</p>
             <form onSubmit={(e) => {
               e.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}>
-              <input onChange = {(e) => {
-                setName(e.target.value);
-              }}
-              placeholder="Digite seu nome"/>
-              <button type="submit" disabled={name.length === 0}>
-                Jogar {name}
-              </button>
+              <Input 
+              name = "nomeDoUser"
+              onChange = {(e) => setName(e.target.value)}
+              placeholder="Digite seu nome"
+              value={name}
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

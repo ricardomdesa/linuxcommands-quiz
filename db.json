@@ -4,25 +4,38 @@
     "description": "Teste os seus conhecimentos sobre comandos linux!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/dsO8D6Qf1brrO/giphy.gif",
+        "title": "Qual o comando para remover um arquivo sem a confirmação?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "remove",
+          "del",
+          "del -f",
+          "rm -f"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
+        "image": "https://media.giphy.com/media/3o6ZsX2OZJ8G3Tec6Y/giphy.gif",
+        "title": "Qual o comando usado para transferir arquivos através da rede, com senha?",
         "description": "Faz tempo em haha",
-        "answer": 0,
+        "answer": 2,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "cp",
+           "transfer",
+           "scp",
+           "rcp"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/D0EjguuQzYr9m/giphy.gif",
+        "title": "'cat' é o comando para...",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "Mudar o diretório",
+           "Ver o conteudo do arquivo",
+           "Concatenar arquivos"
         ]
       }
     ],

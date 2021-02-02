@@ -5,10 +5,11 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "eslint:init":"eslint --init"
+    "eslint:init": "eslint --init"
   },
   "dependencies": {
     "eslint": "^7.18.0",
+    "framer-motion": "^3.2.2-rc.1",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
